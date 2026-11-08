@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>C++ 编程动画 · 目录</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", system-ui, sans-serif;
+    background: #f2f5fa; color: #2b3445; line-height: 1.65;
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    padding: 40px 20px;
+  }
+  .wrap { max-width: 900px; width: 100%; }
+  .brand {
+    font-size: 30px; font-weight: 800; letter-spacing: 1px;
+    background: linear-gradient(120deg, #4f7cff, #8a5cff);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .brandsub { font-size: 14px; color: #69748c; margin: 6px 0 30px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  @media (max-width: 720px) { .grid { grid-template-columns: 1fr; } }
+  .entry {
+    display: block; text-decoration: none; color: inherit;
+    background: #fff; border-radius: 16px; padding: 24px 24px 20px;
+    box-shadow: 0 2px 12px rgba(31,45,80,.08);
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .entry:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(31,45,80,.14); }
+  .entry .tag {
+    display: inline-block; font-size: 12px; font-weight: 700; color: #fff;
+    background: linear-gradient(120deg, #4f7cff, #8a5cff);
+    border-radius: 999px; padding: 2px 12px; margin-bottom: 12px;
+  }
+  .entry h2 { font-size: 19px; margin-bottom: 4px; }
+  .entry p { font-size: 14px; color: #69748c; }
+  .entry .mods { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .entry .mods span { font-size: 13px; background: #f2f5fa; border-radius: 8px; padding: 4px 10px; }
+</style>
+</head>
+<body>
+
+  <div class="wrap">
+    <div class="brand">C++ 编程动画</div>
+    <div class="brandsub">跟着动画一步步学 · 点卡片进入对应级别</div>
+
+    <div class="grid">
+      <a class="entry" href="gesp3.html">
+        <span class="tag">GESP 三级</span>
+        <h2>编码 · 进制 · 位运算 · 数组字符串</h2>
+        <p>ASCII 与原码/反码/补码、进制互转、按位运算与移位、一维数组、string 常用操作与字符串分割（getline 连续空格分割）。</p>
+        <div class="mods">
+          <span>💻 编码基础</span><span>🔢 进制转换</span><span>🔀 位运算</span><span>📚 数组和字符串</span><span>✂️ 字符串分割</span>
+        </div>
+      </a>
+
+      <a class="entry" href="gesp4.html">
+        <span class="tag">GESP 四级</span>
+        <h2>矩阵 · 二维数组 · 扫雷 · 排序</h2>
+        <p>矩阵右旋 90° 与矩阵乘法的搬运动画；扫雷 8 方向数雷（dx / dy 位移矩阵）；冒泡 / 选择 / 插入 / 快速 / 归并 / 堆排序逐步演示。</p>
+        <div class="mods">
+          <span>🧮 矩阵 · 二维数组</span><span>💣 扫雷</span><span>🫧 排序</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
